@@ -13,7 +13,7 @@ a:link{
 
 #main{
 	width: 100vw;
-	height: 10vh;
+	height: 70px;
 	background-color: transparent;
 	position: fixed;
 	top: 0; left: 0;
@@ -22,7 +22,7 @@ a:link{
 
 #main2{
 	width: 100vw;
-	height: 5vh;
+	height: 35px;
 	background-color: transparent;
 	position: fixed;
 	top: 0; left: 0;
@@ -154,9 +154,9 @@ a:link{
 
 .description{
 	margin-left: 5vw;
-	margin-top: 10vh;
+	margin-top: 10%;
 	width: 50vw;
-	margin-bottom: 10vh;
+	margin-bottom: 10%;
 }
 
 .description{
@@ -189,7 +189,7 @@ a:link{
 .profile{
 	img{
 		width: inherit;
-		margin-bottom: 5vh;
+		margin-bottom: 10%;
 	}
 	header{
 		transform-style: preserve-3d;
@@ -202,7 +202,7 @@ a:link{
 		padding-right: 80px;
 		margin-right: 100%;
 		float: left;
-		margin-bottom: 1.5vh;
+		margin-bottom: 5%;
 	}
 	a{
 		font-family: din_lightregular;
@@ -217,8 +217,8 @@ a:link{
 	transition: all .75s ease;
 	transform-origin: center;
 	background-color: black;
-	width: 10vw;
-	height: 13vh;
+	width: 6em;
+	height: 4em;
 }
 
 .three{
@@ -286,11 +286,11 @@ a:link{
 	.blackBox{
 		color: white;
 		background-color: black;
-		width: 10vw;
+		width: 9em;
 		float:left;
-		height: 13vh;
+		height: 6em;
 		margin-bottom: 1vh;
-		margin-top: 10vh;
+		margin-top: 30%;
 	}
 }
 
@@ -333,8 +333,8 @@ a:link{
 
 .contactBox{
 	background-color: black;
-	height: 20vh;
-	width: 15vw;
+	height: 8em;
+	width: 12em;
 	margin-left: 5vw;
 }
 

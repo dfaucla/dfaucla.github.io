@@ -7,17 +7,16 @@ function checkNavBar(){
 
 	if((scrollTop) < 75){
 		for (var i=0; i<boxes.length; i++){
-			if (i==2){
+			if (i!=1){
 			boxes[i].style.top = 40 + "%";
 			boxes[i].style.color = "white";
+			}
 		}
-		}
-		boxes[0].style.top = -40 + "%";
 		boxes[1].style.top = 30 + "%";
 		for (var k=0; k<options.length; k++)
 			options[k].style.color = "white";
 		main2.style.backgroundColor = "transparent";
-		main2.style.height = 5 + "vh";
+		main2.style.height = 35 + "px";
 	}
 	else{
 		for (var i=0; i<boxes.length; i++){
@@ -31,7 +30,7 @@ function checkNavBar(){
 		for (var k=0; k<options.length; k++)
 			options[k].style.color = "black";
 		main2.style.backgroundColor = "white";
-		main2.style.height = 10 + "vh";
+		main2.style.height = 70 + "px";
 	}
 }
 
