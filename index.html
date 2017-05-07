@@ -1,32 +1,79 @@
 <!DOCTYPE HTML>
-<link rel="stylesheet" type="text/css" href="assets/fonts/DIN/stylesheet.css"/>
-<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css"/>
-<link rel="icon" href="assets/images/icon.png"/>
+<link rel="stylesheet" type="text/css" href="/assets/fonts/DIN/stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/fonts/DRUK/stylesheet.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.css"/>
+<link rel="icon" href="/assets/images/icon.png"/>
 <html>
 <head>
 	<title>Design for America</title>
 </head>
 <body>
-<div id="main2"></div>
-<div id="main">
-	<a href="/"><div id="title">DFA</div></a>
-	<div class="options" style="top: 30%;">
-		<ul>
-			<li><a href="/team">Team</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/contact">Contact</a></li>
-		</ul>
+
+<div class="scrollGif">
+	<div></div>
+</div> 
+<div id="loading">
+	<div class="blink circle"></div>
+</div>
+	<a href="/"><div id="title" class="white">DFA</div></a>
+
+<div class="switch left">
+	<a href="/about">
+	<div class="option">
+		<header>ABOUT</header>
+		<div class="imgWrap"></div>
+		<img src="/assets/images/pinboard.jpg"/>
 	</div>
-	<div class="flag">UCLA BRANCH</div>
-</div>
-<div class="dominant" style="height: 150vh;">
-	<div class="tagline">
-		Design for America. Human-centered design.
+	</a>
+	<a href="/contact">
+	<div class="option">
+		<header>CONTACT</header>
+		<div class="imgWrap"></div>
+		<img src="/assets/images/back.jpg"/>
+	</div>
+	</a>
+	<a href="/team">
+	<div class="option">
+		<header>TEAM</header>
+		<div class="imgWrap"></div>
+		<img src="/assets/images/ocean.jpg"/>
+	</div>
+	</a>
+</div> 
+
+<div class="switch right" style="transition: all .5s ease;">
+	<div class="half">
+	<div class="wrap">
+		<header class="headline">MISSION</header>
+		<p class="paragraph">
+			Design for America is an idea incubator, a motivated community, and a way of approaching complicated challenges. DFA is a student network - and so much more.
+		</p>
+		<a href="http://designforamerica.com/">
+			<div class="arrowLink">&#10095;</div>
+		</a>
+	</div>
 	</div>
 </div>
-<div class="section">
-	
+
+<div class="landing">
+
+<div class="videoWrap">
+	<video autoplay muted loop>
+		<source src="/assets/images/d4avideo.mp4" type="video/mp4"/>
+	</video>
 </div>
+
+
+</div>
+
+</div>
+
 </body>
-<script src="script.js"></script>
+<script>
+	var loading = document.getElementById('loading');
+	document.getElementsByTagName('video')[0].addEventListener('canplaythrough', function(){
+		document.body.removeChild(loading);
+	});
+</script>
+<script src="/script.js"></script>
 </html>
