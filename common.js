@@ -2,7 +2,7 @@ var WIDTH = window.innerWidth;
 var HEIGHT = window.innerHeight;
 
 const WAIT = 750;
-const WHEELAMT = 10;
+const WHEELAMT = 5;
 
 function resize(){
 	WIDTH = window.innerWidth;
