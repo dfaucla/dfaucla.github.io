@@ -1,79 +1,32 @@
-<!DOCTYPE HTML>
-<link rel="stylesheet" type="text/css" href="/assets/fonts/DIN/stylesheet.css"/>
-<link rel="stylesheet" type="text/css" href="/assets/fonts/DRUK/stylesheet.css"/>
-<link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.css"/>
-<link rel="icon" href="/assets/images/icon.png"/>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Design for America</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="public/style/master.css">
+  <title>Design for America</title>
 </head>
 <body>
-
-<div class="scrollGif">
-	<div></div>
-</div> 
-<div id="loading">
-	<div class="blink circle"></div>
-</div>
-	<a href="/"><div id="title" class="white">DFA</div></a>
-
-<div class="switch left">
-	<a href="/about">
-	<div class="option">
-		<header>ABOUT</header>
-		<div class="imgWrap"></div>
-		<img src="/assets/images/pinboard.jpg"/>
-	</div>
-	</a>
-	<a href="/contact">
-	<div class="option">
-		<header>CONTACT</header>
-		<div class="imgWrap"></div>
-		<img src="/assets/images/back.jpg"/>
-	</div>
-	</a>
-	<a href="/team">
-	<div class="option">
-		<header>TEAM</header>
-		<div class="imgWrap"></div>
-		<img src="/assets/images/ocean.jpg"/>
-	</div>
-	</a>
-</div> 
-
-<div class="switch right" style="transition: all .5s ease;">
-	<div class="half">
-	<div class="wrap">
-		<header class="headline">MISSION</header>
-		<p class="paragraph">
-			Design for America is an idea incubator, a motivated community, and a way of approaching complicated challenges. DFA is a student network - and so much more.
-		</p>
-		<a href="http://designforamerica.com/">
-			<div class="arrowLink">&#10095;</div>
-		</a>
-	</div>
-	</div>
-</div>
-
-<div class="landing">
-
-<div class="videoWrap">
-	<video autoplay muted loop>
-		<source src="/assets/images/d4avideo.mp4" type="video/mp4"/>
-	</video>
-</div>
-
-
-</div>
-
-</div>
-
+  <header>
+    <div id="navbar-links">
+      <ul>
+        <li><a href="about/index.html">About</a></li>
+        <li><a href="process/index.html">Process</a></li>
+        <li><a href="projects/index.html">Projects</a></li>
+        <li><a href="contact/index.html">Contact</a></li>
+      </ul>
+    </div>
+    <div id="navbar-logo">
+      <a href="">DFA@UCLA</a>
+    </div>
+  </header>
+  <div class="statement">
+    A human-centered design studio for UCLA creatives
+  </div>
+  <div class="fullscreen-video">
+    <video src="d4avideo.mp4" autoplay poster="posterimage.jpg">
+    </video>
+  </div>
 </body>
-<script>
-	var loading = document.getElementById('loading');
-	document.getElementsByTagName('video')[0].addEventListener('canplaythrough', function(){
-		document.body.removeChild(loading);
-	});
-</script>
-<script src="/script.js"></script>
 </html>
