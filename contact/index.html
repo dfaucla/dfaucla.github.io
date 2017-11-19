@@ -4,40 +4,68 @@
 <link rel="icon" href="/assets/images/icon.png"/>
 <html>
 <head>
-	<title>Contact</title>
+	<title>Team</title>
 </head>
 <body>
-<div id="main2"></div>
-<div id="main">
-	<a href="/"><div id="title">DFA</div></a>
-	<div class="options" style="top: 30%;">
-		<ul>
-			<li><a href="/team">Team</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/contact">Contact</a></li>
-		</ul>
+
+<a href="/"><div id="title" class="white">DFA</div></a>
+
+<div class="switch left">
+	<a href="/about">
+	<div class="option">
+		<header>ABOUT</header>
+		<div class="imgWrap"></div>
+		<img src="/assets/images/pinboard.jpg"/>
 	</div>
-	<div class="flag">UCLA BRANCH</div>
+	</a>
+	<a href="/contact">
+	<div class="option">
+		<header>CONTACT</header>
+		<div class="imgWrap"></div>
+		<img src="/assets/images/back.jpg"/>
+	</div>
+	</a>
+	<a href="/team">
+	<div class="option">
+		<header>TEAM</header>
+		<div class="imgWrap"></div>
+		<img src="/assets/images/ocean.jpg"/>
+	</div>
+	</a>
+</div> 
+
+<div class="slideContainer">
+<div class="landingTitle white">
+	CONTACT
 </div>
-<div class="dominant" style="height: 100vh;">
-	<div class="tagline">
-		Where to find us? 
+	<div class="landingImage">
+		<img src="/assets/images/pinboard.jpg"/>
 	</div>
-</div>
-<div class="section">
-	<div class="description">
-		<header>CONTACT INFO</header>
-		<p>Meet the people on board. Eddie Huang, the celebrity chef behind Baohaus, host of Vice TV’s "Huang’s World", and author of acclaimed memoir "Fresh Off the Boat", comes to Chop Shop to discuss his latest book, "Double Cup Love". After coming of age and dis</p>
+
+	<div class="canvasContainer"></div>
+
+	<div class="section">
+					<div class="description">
+					<h1>CONTACT INFO</h1>
+					<p>
+						d4a.ucla@gmail.com
+					</p>
+				</div>
 	</div>
-	<div class="contactBox">
-		<ul>
-			<li>bryanw0ng@g.ucla.edu</li>
-			<li>6268412143</li>
-			<li>330 de neve</li>
-		</ul>
-	</div>
-</div>
+
 </div>
 </body>
-<script src="/script.js"></script>
+<script src="/common.js"></script>
+<script src="/bower_components/Matter/build/matter.js"></script>
+<script src="/matterattractors.js"></script>
+<script src="/matterjs.js"></script>
+<script>
+	function update(){
+	Engine.update(engine, 16.666); //update the engine (world simulator)
+	clip('/assets/images/pinboard.jpg'); //update canvas clip in accordance to what's being drawn 
+	window.requestAnimationFrame(update);
+	}
+
+	update();
+</script>
 </html>

@@ -1,37 +1,93 @@
-function checkNavBar(){
-	var scrollTop = Number(document.body.scrollTop);
-	var main2 = document.getElementById('main2');
-	var main = document.getElementById('main');
-	var boxes = main.getElementsByTagName('div');
-	let options = document.getElementsByClassName('options')[0].getElementsByTagName('a');
+var WIDTH = window.innerWidth;
+var HEIGHT = window.innerHeight;
+var video = document.getElementsByClassName('landing')[0].getElementsByTagName('video')[0];
+const WAIT = 750;
+const WHEELAMT = 10;
 
-	if((scrollTop) < 75){
-		for (var i=0; i<boxes.length; i++){
-			if (i!=1){
-			boxes[i].style.top = 40 + "%";
-			boxes[i].style.color = "white";
-			}
-		}
-		boxes[1].style.top = 30 + "%";
-		for (var k=0; k<options.length; k++)
-			options[k].style.color = "white";
-		main2.style.backgroundColor = "transparent";
-		main2.style.height = 35 + "px";
+function resize(){
+	WIDTH = window.innerWidth;
+	HEIGHT = window.innerHeight;
+
+	if (WIDTH>HEIGHT){
+		video.style.width = WIDTH + "px";
+		video.style.height = "auto";
 	}
 	else{
-		for (var i=0; i<boxes.length; i++){
-			if (i!=1){
-			boxes[i].style.top = 50 + "%";
-			boxes[i].style.color = "black";
-		}
-		}
-
-		boxes[1].style.top = 37 + "%";
-		for (var k=0; k<options.length; k++)
-			options[k].style.color = "black";
-		main2.style.backgroundColor = "white";
-		main2.style.height = 70 + "px";
+		video.style.height = HEIGHT + "px";
+		video.style.width = "auto";
 	}
 }
 
-window.addEventListener('scroll', checkNavBar);
+window.addEventListener('resize', resize);
+
+function init(){
+	if (WIDTH>HEIGHT){
+		video.style.width = WIDTH + "px";
+	}
+	else{
+		video.style.height = HEIGHT + "px";
+	}
+}
+
+window.addEventListener('load', init);
+
+function screen(index, start, end) {
+	var _screen = this;
+	_screen.DOM=document.getElementsByClassName('switch')[index];
+	_screen.on=false;
+	_screen.switchable=true;
+	_screen.start = start;
+	_screen.end = end;
+	_screen.toggleSwitchable = function(){
+		if (_screen.switchable){
+			_screen.switchable = false;
+			return;
+		}
+		_screen.switchable = true;
+	}
+	_screen.switchOn = function(){
+			_screen.DOM.style.left = _screen.end +"%";
+			_screen.on = true;
+			_screen.DOM.style.opacity = 1;
+	};
+	_screen.switchOff = function(){
+			_screen.DOM.style.left = _screen.start + "%";
+			_screen.on = false;
+			_screen.DOM.style.opacity = 0;
+	}
+}
+
+//
+
+var dir = new screen(0, -100, 0);
+var mission = new screen(1, 100, 50);
+
+window.addEventListener('mousewheel', function(e){
+	var scrollX = e.deltaX; var scrollY = e.deltaY;
+	var moveable = ((scrollX < -WHEELAMT || scrollX > WHEELAMT) || scrollY > -WHEELAMT || scrollY < WHEELAMT);
+	if (!moveable || !mission.switchable || !dir.switchable) //do nothing if small movement or in switch progress
+		return;
+	if (scrollX < -WHEELAMT || scrollY > WHEELAMT){
+		if (mission.on)
+			mission.switchOff();
+		else
+			dir.switchOn();
+	}
+	else if (scrollX > WHEELAMT || scrollY < -WHEELAMT){
+		if (dir.on)
+			dir.switchOff();
+		else
+			mission.switchOn();
+	}
+	mission.toggleSwitchable();
+	dir.toggleSwitchable();
+	setTimeout(dir.toggleSwitchable, WAIT);
+	setTimeout(mission.toggleSwitchable, WAIT);
+});
+
+window.addEventListener('mousewheel', removeScrollGif);
+
+function removeScrollGif(){
+	document.getElementsByClassName('scrollGif')[0].style.opacity = 0;
+	window.removeEventListener('mousewheel', removeScrollGif);
+};
