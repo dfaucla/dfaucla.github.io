@@ -1,0 +1,45 @@
+header {
+  color: $black;
+  padding: 70px 50px;
+}
+
+#navbar-links {
+  float: left;
+  font-family: $Gotham;
+
+  li {
+    display: inline-block;
+    margin: 0 20px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      -webkit-transition: text-decoration 2s ease;
+      transition: text-decoration 2s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .active {
+      text-decoration: underline;
+    }
+  }
+}
+
+#navbar-logo {
+  float: right;
+  margin-right: 50px;
+
+  font: {
+    family: 'Roboto Mono', monospace;
+    weight: 700;
+    size: 28px;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+}

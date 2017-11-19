@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
+@font-face {
+  font-family: "Gotham";
+  src: url("Gotham-Book.otf");
+  font-weight: 400;
+}
+
+$Gotham: Gotham, sans-serif;
+$Zilla: 'Zilla Slab', serif;
+$black: #333333;
+$charcoal: #4f4f4f;
+$lightgrey: #bdbdbd;
+
+h1,
+h2,
+h3 {
+  font: {
+    family: $Zilla;
+  }
+  color: $charcoal;
+  font-weight: 300;
+}
+
+p {
+  color: $charcoal;
+  font: {
+    family: $Gotham;
+  }
+  line-height: 2;
+  margin: 0;
+  letter-spacing: 0.7px;
+}

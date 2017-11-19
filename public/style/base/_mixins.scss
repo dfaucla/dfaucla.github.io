@@ -1,0 +1,95 @@
+@mixin yellow-gradient() {
+  background: rgba(255, 239, 199, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 239, 199, 1) 0%,
+    rgba(255, 228, 158, 1) 40%,
+    rgba(255, 223, 148, 1) 67%,
+    rgba(255, 224, 145, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(255, 239, 199, 1)),
+    color-stop(40%, rgba(255, 228, 158, 1)),
+    color-stop(67%, rgba(255, 223, 148, 1)),
+    color-stop(100%, rgba(255, 224, 145, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 239, 199, 1) 0%,
+    rgba(255, 228, 158, 1) 40%,
+    rgba(255, 223, 148, 1) 67%,
+    rgba(255, 224, 145, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 239, 199, 1) 0%,
+    rgba(255, 228, 158, 1) 40%,
+    rgba(255, 223, 148, 1) 67%,
+    rgba(255, 224, 145, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(255, 239, 199, 1) 0%,
+    rgba(255, 228, 158, 1) 40%,
+    rgba(255, 223, 148, 1) 67%,
+    rgba(255, 224, 145, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 239, 199, 1) 0%,
+    rgba(255, 228, 158, 1) 40%,
+    rgba(255, 223, 148, 1) 67%,
+    rgba(255, 224, 145, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffefc7', endColorstr='#ffe091', GradientType=1);
+}
+
+@mixin purple-gradient() {
+  background: rgba(235, 233, 249, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(235, 233, 249, 1) 0%,
+    rgba(216, 208, 239, 1) 45%,
+    rgba(206, 199, 236, 1) 63%,
+    rgba(193, 191, 234, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(235, 233, 249, 1)),
+    color-stop(45%, rgba(216, 208, 239, 1)),
+    color-stop(63%, rgba(206, 199, 236, 1)),
+    color-stop(100%, rgba(193, 191, 234, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(235, 233, 249, 1) 0%,
+    rgba(216, 208, 239, 1) 45%,
+    rgba(206, 199, 236, 1) 63%,
+    rgba(193, 191, 234, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(235, 233, 249, 1) 0%,
+    rgba(216, 208, 239, 1) 45%,
+    rgba(206, 199, 236, 1) 63%,
+    rgba(193, 191, 234, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(235, 233, 249, 1) 0%,
+    rgba(216, 208, 239, 1) 45%,
+    rgba(206, 199, 236, 1) 63%,
+    rgba(193, 191, 234, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(235, 233, 249, 1) 0%,
+    rgba(216, 208, 239, 1) 45%,
+    rgba(206, 199, 236, 1) 63%,
+    rgba(193, 191, 234, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1);
+}
