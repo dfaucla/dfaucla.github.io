@@ -7,25 +7,35 @@ header {
   color: #333333;
   padding: 70px 50px; }
 
+h1,
+h2,
 h3 {
+  font-family: Gotham, sans-serif;
   color: #4f4f4f;
   font-weight: 300; }
 
 p {
   color: #4f4f4f;
-  font-size: 14px; }
+  font-family: Gotham, sans-serif;
+  line-height: 2;
+  margin: 0; }
+
+ul {
+  list-style: none; }
 
 #navbar-links {
   float: left;
   font-family: Gotham, sans-serif; }
-  #navbar-links ul {
-    list-style: none; }
   #navbar-links li {
     display: inline-block;
     margin: 0 20px; }
     #navbar-links li a {
       text-decoration: none;
-      color: inherit; }
+      color: inherit;
+      -webkit-transition: text-decoration 2s ease;
+      transition: text-decoration 2s ease; }
+    #navbar-links li a:hover {
+      text-decoration: underline; }
     #navbar-links li .active {
       text-decoration: underline; }
 
@@ -70,15 +80,6 @@ body {
   background: linear-gradient(to right, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1); }
 
-.jumboscreen-about {
-  width: 100%;
-  height: 70vh;
-  clear: both;
-  opacity: 0.9;
-  background: url("../../about/la.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 #contact-picture {
   float: left;
   margin: 50px 0;
@@ -102,7 +103,6 @@ body {
   margin: 70px 0;
   font-family: Gotham, sans-serif; }
   #contact-info ul {
-    list-style: none;
     text-align: center;
     padding: 0 100px; }
     #contact-info ul h3 {
@@ -110,5 +110,20 @@ body {
       font-size: 16px; }
     #contact-info ul p {
       color: #828282; }
+
+.site-wrapper {
+  margin: 0 110px; }
+
+.description {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.join {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .join ul {
+    margin-left: -40px; }
+  .join li {
+    margin: 0; }
 
 /*# sourceMappingURL=master.css.map */
