@@ -61,6 +61,21 @@
     p {
       color: $charcoal;
     }
+
+    a {
+      color: $charcoal;
+      text-decoration: none;
+      line-height: 2;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:visited {
+        text-decoration: none;
+        color: $charcoal;
+      }
+    }
   }
 }
 
@@ -108,6 +123,17 @@
 
   li {
     margin: 0;
+  }
+
+  a {
+    color: $charcoal;
+    letter-spacing: 0.7px;
+    font-family: $Gotham;
+  }
+
+  &:visited {
+    text-decoration: none;
+    color: $charcoal;
   }
 }
 

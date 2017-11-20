@@ -11,11 +11,15 @@ footer {
   clear: both;
 
   a {
-    color: $charcoal;
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
+    }
+
+    &:visited {
+      text-decoration: none;
+      color: $charcoal;
     }
   }
 }
