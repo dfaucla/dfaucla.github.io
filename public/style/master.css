@@ -8,7 +8,7 @@ h1,
 h2,
 h3 {
   font-family: "Zilla Slab", serif;
-  color: #4f4f4f;
+  color: #333333;
   font-weight: 300; }
 
 p {
@@ -170,7 +170,7 @@ ul {
     margin: 0; }
 
 .team {
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
   .team h1,
   .team p {
     width: 60%; }
@@ -178,14 +178,14 @@ ul {
 .team-members {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 30px 0;
   justify-content: space-between; }
 
 .member {
   display: flex;
   height: 300px;
-  width: 30%;
-  margin: 0 30px 0 0;
+  width: 25%;
   background: #ebe9f9;
   background: -moz-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, #ebe9f9), color-stop(45%, #d8d0ef), color-stop(63%, #cec7ec), color-stop(100%, #c1bfea));
@@ -194,5 +194,25 @@ ul {
   background: -ms-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
   background: linear-gradient(to right, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1); }
+
+.info-wrapper {
+  width: 100%;
+  margin: 20px;
+  background-color: white;
+  opacity: 0.8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.member-info {
+  margin: auto; }
+  .member-info p {
+    width: 100%; }
+  .member-info .name {
+    font-family: "Zilla Slab", serif;
+    font-size: 16px; }
+  .member-info .position {
+    font-size: 14px; }
 
 /*# sourceMappingURL=master.css.map */
