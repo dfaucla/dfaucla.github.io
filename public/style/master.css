@@ -55,7 +55,8 @@ footer {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  letter-spacing: 0.7px; }
+  letter-spacing: 0.7px;
+  clear: both; }
   footer a {
     color: #4f4f4f;
     text-decoration: none; }
@@ -100,18 +101,17 @@ ul {
   float: left;
   margin: 50px 0;
   width: 50%; }
-
-.picture {
-  height: 600px;
-  margin: 0 0 0 100px;
-  background: #ebe9f9;
-  background: -moz-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #ebe9f9), color-stop(45%, #d8d0ef), color-stop(63%, #cec7ec), color-stop(100%, #c1bfea));
-  background: -webkit-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
-  background: -o-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
-  background: -ms-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
-  background: linear-gradient(to right, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1); }
+  #contact-picture .picture {
+    height: 600px;
+    margin: 0 0 0 100px;
+    background: #ebe9f9;
+    background: -moz-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #ebe9f9), color-stop(45%, #d8d0ef), color-stop(63%, #cec7ec), color-stop(100%, #c1bfea));
+    background: -webkit-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
+    background: -o-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
+    background: -ms-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
+    background: linear-gradient(to right, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1); }
 
 #contact-info {
   float: right;
@@ -123,9 +123,10 @@ ul {
     padding: 0 100px; }
     #contact-info ul h3 {
       color: #cec7ec;
+      font-family: Gotham, sans-serif;
       font-size: 16px; }
     #contact-info ul p {
-      color: #bdbdbd; }
+      color: #4f4f4f; }
 
 .site-wrapper {
   margin: 0 110px; }
