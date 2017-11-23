@@ -233,4 +233,61 @@ ul {
   .member-info .position {
     font-size: 14px; }
 
+.inspiration {
+  display: flex;
+  flex-direction: row; }
+  .inspiration .inspiration-text {
+    width: 50%; }
+  .inspiration .inspiration-picture {
+    width: 50%; }
+    .inspiration .inspiration-picture .picture {
+      margin: auto 20%; }
+
+.ideation .post-its {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row; }
+  .ideation .post-its:first-child {
+    justify-content: space-between; }
+  .ideation .post-its:nth-child(even) {
+    justify-content: space-around;
+    margin-top: -70px; }
+  .ideation .post-its .post {
+    display: flex;
+    height: 200px;
+    width: 20%; }
+    .ideation .post-its .post:nth-child(odd) {
+      background: #ebe9f9;
+      background: -moz-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #ebe9f9), color-stop(45%, #d8d0ef), color-stop(63%, #cec7ec), color-stop(100%, #c1bfea));
+      background: -webkit-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
+      background: -o-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
+      background: -ms-linear-gradient(left, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
+      background: linear-gradient(to right, #ebe9f9 0%, #d8d0ef 45%, #cec7ec 63%, #c1bfea 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1);
+      margin-right: 50px;
+      z-index: 99; }
+    .ideation .post-its .post:nth-child(even) {
+      background: #ffefc7;
+      background: -moz-linear-gradient(left, #ffefc7 0%, #ffe49e 40%, #ffdf94 67%, #ffe091 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #ffefc7), color-stop(40%, #ffe49e), color-stop(67%, #ffdf94), color-stop(100%, #ffe091));
+      background: -webkit-linear-gradient(left, #ffefc7 0%, #ffe49e 40%, #ffdf94 67%, #ffe091 100%);
+      background: -o-linear-gradient(left, #ffefc7 0%, #ffe49e 40%, #ffdf94 67%, #ffe091 100%);
+      background: -ms-linear-gradient(left, #ffefc7 0%, #ffe49e 40%, #ffdf94 67%, #ffe091 100%);
+      background: linear-gradient(to right, #ffefc7 0%, #ffe49e 40%, #ffdf94 67%, #ffe091 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffefc7', endColorstr='#ffe091', GradientType=1);
+      margin-top: -30px;
+      margin-right: 70px; }
+
+.implementation {
+  display: flex;
+  flex-direction: row; }
+  .implementation .implementation-text {
+    width: 50%;
+    padding-right: 100px; }
+  .implementation .implementation-picture {
+    width: 50%; }
+    .implementation .implementation-picture .picture {
+      margin-left: 10%; }
+
 /*# sourceMappingURL=master.css.map */
