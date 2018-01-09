@@ -5,6 +5,8 @@
 @import 'base/mixins';
 @import 'base/common';
 
+$breakpoint: 700px;
+
 .fullscreen-video video {
   width: 100%;
   height: auto;
@@ -173,6 +175,7 @@
 
 .member-info {
   margin: auto;
+  padding: 20px;
   p {
     width: 100%;
   }
@@ -183,6 +186,12 @@
 
   .position {
     font-size: 14px;
+  }
+
+  .blurb {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 

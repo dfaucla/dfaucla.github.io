@@ -7,9 +7,22 @@
 h1,
 h2,
 h3 {
-  font-family: "Zilla Slab", serif;
   color: #333333;
-  font-weight: 300; }
+  font-weight: 400; }
+
+h1 {
+  font-family: Gotham, sans-serif;
+  font-size: 30px; }
+
+h2 {
+  font-family: "Zilla Slab", serif;
+  font-size: 30px; }
+
+h3 {
+  font-family: Gotham, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4f4f4f; }
 
 p {
   color: #4f4f4f;
@@ -70,15 +83,17 @@ footer {
   margin: 30px 0px 60px 110px;
   width: 60%;
   float: left;
-  line-height: 50px;
-  font-family: Gotham, sans-serif;
-  font-size: 30px; }
+  line-height: 50px; }
 
 body {
   margin: 0; }
 
 ul {
   list-style: none; }
+
+.description a {
+  color: #bdbdbd;
+  text-decoration: none; }
 
 .fullscreen-video video {
   width: 100%;
@@ -224,7 +239,8 @@ ul {
   align-items: center; }
 
 .member-info {
-  margin: auto; }
+  margin: auto;
+  padding: 20px; }
   .member-info p {
     width: 100%; }
   .member-info .name {
@@ -232,6 +248,10 @@ ul {
     font-size: 18px; }
   .member-info .position {
     font-size: 14px; }
+  .member-info .blurb {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 20px; }
 
 .inspiration {
   display: flex;

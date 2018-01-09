@@ -8,6 +8,7 @@
 
 $Gotham: Gotham, sans-serif;
 $Zilla: 'Zilla Slab', serif;
+$Roboto: 'Roboto Mono', sans-serif;
 $black: #333333;
 $charcoal: #4f4f4f;
 $lightgrey: #bdbdbd;
@@ -15,11 +16,31 @@ $lightgrey: #bdbdbd;
 h1,
 h2,
 h3 {
+  color: $black;
+  font-weight: 400;
+}
+
+h1 {
+  font: {
+    family: $Gotham;
+    size: 30px;
+  }
+}
+
+h2 {
   font: {
     family: $Zilla;
+    size: 30px;
   }
-  color: $black;
-  font-weight: 300;
+}
+
+h3 {
+  font: {
+    family: $Gotham;
+    size: 18px;
+  }
+  line-height: 30px;
+  color: $charcoal;
 }
 
 p {

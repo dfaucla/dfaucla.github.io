@@ -5,3 +5,8 @@ body {
 ul {
   list-style: none;
 }
+
+.description a {
+  color: $lightgrey;
+  text-decoration: none;
+}
